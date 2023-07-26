@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdullah's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="icon" href="logo-colored.jpeg" type="image/x-icon"/>
+  <style>
+    body {
+      background-color: rgb(5, 5, 5);
+      font-family: 'poppins', 'sans-serif';
+    }
+
+    #myBrand {
+      font-size: 32px;
+    }
+
+    #font a {
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 500;
+      overflow: hidden;
+      padding: 5px 7px;
+      position: relative;
+    }
+
+    .leftSection {
+      font-size: 3rem;
+      margin-top: 12rem;
+      margin-left: 5rem;
+    }
+
+    #active1 {
+      color: #d6002f;
+      border-bottom: 2px solid #d6002f;
+    }
+
+    /* #active2{
+      color: #d6002f;
+      border-bottom: 2px solid #d6002f;
+    }
+    #active3{
+      color: #d6002f;
+      border-bottom: 2px solid #d6002f;
+    }
+    #active4{
+      color: #d6002f;
+      border-bottom: 2px solid #d6002f;
+    }
+    #active5{
+      color: #d6002f;
+      border-bottom: 2px solid #d6002f;
+    } */
+
+    #font a:hover {
+      color: white;
+      background-color: #d6002f;
+      /* transition:linear;
+            transition-duration: 1s;
+            transition-delay: 0s; */
+    }
+
+    #btncontactme {
+      float: left;
+      background-color: transparent;
+      color: white;
+      border: 3px solid white;
+      border-radius: 7px;
+      padding: .75rem;
+      font-size: 1.5rem;
+    }
+
+    .button {
+      text-align: center;
+      margin-top: 10px;
+      background-color: transparent;
+
+      /* float: left; */
+    }
+
+    #btncontactme:hover {
+      color: #d6002f;
+      border: 3px solid #d6002f;
+      filter: drop-shadow(5px 5px 5px red)
+    }
+  </style>
+</head>
+
+<body>
+  <div id="Home">
+    <nav id="nav-dark" class="navbar fixed-top navbar-expand-lg bg-black p-4" data-bs-theme="dark">
+      <div class="container-fluid">
+        <div id="myBrand" class="navbar-brand">
+          <span class="text-danger">codeBy</span><span class="text-white">Abdullah</span>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNavAltMarkup">
+          <div id="font" class="navbar-nav">
+            <a id="active1" class="nav-link active d-flex justify-content-center ms-5" aria-current="page"
+              href="#Home">Home</a>
+            <a id="active2" class="nav-link active d-flex justify-content-center ms-5" href="#About">About</a>
+            <a id="active3" class="nav-link active d-flex justify-content-center ms-5" href="#Skills">Skills</a>
+            <a id="active4" class="nav-link active d-flex justify-content-center ms-5" href="#Project">Projects</a>
+            <a id="active5" class="nav-link active d-flex justify-content-center ms-5" href="#Contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class=" container leftSection text-white sm-12">
+      Hi, My name is <span class="text-danger" style="filter: drop-shadow(5px 5px 5px red)">Abdullah</span>
+      <div>and I am passionate</div>
+
+      <span id="element" class="text-danger" style="filter: drop-shadow(5px 5px 5px red)"></span>
+
+      <div class="button container-fluid">
+        <a href="#Contact">
+          <button id="btncontactme" type="button">Contact Me</button>
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+  <div id="About" class="container-fluid"></div>
+  <div id="Skills" class="container-fluid"></div>
+  <div id="Project" class="container-fluid"></div>
+  <div id="Contact" class="container-fluid"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: [
+        "Web Developer",
+        "Enthusiastic towards Blockchain",
+        "Web Designer",
+      ],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
