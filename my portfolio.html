@@ -9,14 +9,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="lemon.png" type="image/x-icon" />
   <style>
     body {
       /* background-color: #020202; */
       background-color: rgb(5, 5, 5);
       color: white;
-      font-family: "poppins", "sans-serif";
+      font-family: 'Poppins', 'sans-serif';
     }
 
     #myBrand {
@@ -74,8 +76,8 @@
     }
 
     #btncontactme {
-      float: left;
       background-color: transparent;
+      float: left;
       color: white;
       border: 3px solid white;
       border-radius: 7px;
@@ -87,12 +89,21 @@
       text-align: center;
       margin-top: 10px;
       background-color: transparent;
-      
+
     }
-    @keyframes btn-con{
-      0%{box-shadow: 0 0 5px #d6002f;}
-      50%{box-shadow: 0 0 20px #d6002f;}
-      100%{box-shadow: 0 0 5px #d6002f;}
+
+    @keyframes btn-con {
+      0% {
+        box-shadow: 0 0 5px #d6002f;
+      }
+
+      50% {
+        box-shadow: 0 0 20px #d6002f;
+      }
+
+      100% {
+        box-shadow: 0 0 5px #d6002f;
+      }
     }
 
     #btncontactme:hover {
@@ -192,18 +203,66 @@
     .form>form input[type="button"]:hover {
       background-position: 0;
     }
-    .footer-logo{
-      color:white;
+
+    .footer-logo {
+      color: white;
       font-size: 40px;
       width: 60px;
       background-color: red;
       text-decoration: none;
       border-radius: 50%;
-      
+
     }
-    .footer-logo:hover{
+
+    .footer-logo:hover {
       background-color: #fff;
       color: red;
+    }
+
+    .topic {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .top-heading {
+      margin-top: 205px;
+      padding: 25px;
+    }
+
+    #aboutme {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 2;
+    }
+
+    .personal {
+      font-size: 22px;
+      font-weight: 600;
+      margin-left: 25px;
+    }
+    .personal-key{
+      color: #666b7b;
+    }
+    #cv-download-btn{
+      background-color: transparent;
+      float: left;
+      margin-left: 25px;
+      color: white;
+      border: 3px solid white;
+      border-radius: 7px;
+      padding: 0.50rem;
+      font-size: 1.2rem;
+
+      /* transition */
+      background: linear-gradient(270deg,transparent 0,transparent 50%,#d6002f 0);
+      background-position: 100%;
+      transition: background-position 0.3s ease-in-out;
+      background-size: 200% 100%;
+    }
+    #cv-download-btn:hover{
+      color: white;
+      border: none;
+      background-position: 0;
     }
 
     /* #Contact{
@@ -222,7 +281,7 @@
 </head>
 
 <body>
-  <div id="Home">
+  <div>
     <nav id="nav-dark" class="navbar fixed-top navbar-expand-lg bg-black p-4" data-bs-theme="dark">
       <div class="container-fluid">
         <div id="myBrand" class="navbar-brand">
@@ -244,7 +303,7 @@
         </div>
       </div>
     </nav>
-    <div class="container homeBody">
+    <div id="Home" class="container homeBody">
       <div class="row">
         <div class="col col-md-12 col-sm-12 col-lg-6 leftSection text-white">
           Hi, My name is
@@ -264,26 +323,96 @@
       </div>
     </div>
   </div>
-  <div id="About" class="container-fluid"></div>
-  <div id="Skills" class="container-fluid"></div>
+  <div id="About" class="container mb-5">
+    <div class="row">
+      <!-- first column in row one of about me -->
+      <div class="col col-12 col-md-12 col-sm-12 col-lg-6">
+        <div class="heading mt-5"
+          style="align-items:center; text-decoration:none; color:#d6002f; display:flex; font-size:16px;   font-weight:500; gap: 10px; ">
+          About
+          <div class="line" style="border: 0.25px solid #d6002f; width: 40px"></div>
+        </div>
+        <h1 class="c-me">About Me</h1>
+        <div class="d-flex flex-sm-column flex-row topic mb-5 mt-3">MERN Stack Developer | React js | Node js | Express
+          js | MongoDB</div>
+        <img class="rounded img-fluid" src="profile picture.jpg" alt="personal picture">
+      </div>
+      <!-- second column of row one in about me  -->
+      <div class="col col-12 col-md-12 col-sm-12 col-lg-6">
+        <div class="top-heading">
+          <span style="font-size:40px; font-weight: 700; margin-top:90px;">Hi There!</span>
+          <p id="aboutme" class="mt-4">I'm an experienced MERN Stack Software Engineer with a strong track record of
+            delivering high-quality solutions. Dedicated, detail-oriented, and committed to exceeding industry
+            standards. Seeking new opportunities to leverage my skills and contribute to innovative projects.</p>
+          <div class="line" style="border: 0.25px solid red; width:95% ;margin-left:8px"></div>
+        </div>
+        <div class="personal">
+          <p>PERSONAL INFO</p>
+        </div>
+        <div class="container ms-3">
+          <div class="row">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-6">
+              <p><span class="personal-key">Name:</span> Abdullah</p>
+              <p><span class="personal-key">Age:</span> 21 years</p>
+              <p><span class="personal-key">Nationality:</span> Pakistani</p>
+              <p><span class="personal-key">Open to work:</span> Available</p>
+            </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-6">
+              <p><span class="personal-key">Address:</span> Sukkur, PAKISTAN</p>
+              <p><span class="personal-key">Phone:</span> +92 315 6914702</p>
+              <p><span class="personal-key">Email:</span> abdullahmemon12564@gm...</p>
+              <p><span class="personal-key">Language:</span> English, Sindhi, Urdu</p>
+            </div>
+          </div>
+        </div>
+        <!-- button for cv download -->
+        <div class="button mt-3">
+          <a href="cv.pdf" download>
+            <button id="cv-download-btn" type="button">Download Resume</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div id="Skills" class="container">
+    <div class="heading mt-5"style="align-items:center; text-decoration:none; color:#d6002f; display:flex; font-size:16pxfont-weight:500; 
+        gap: 10px; ">Skills & Experience
+          <div class="line" style="border: 0.25px solid #d6002f; width: 40px"></div>
+    </div>
+    <h1 class="c-me">My Expertise</h1>
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="mongo.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>  
+  </div>
   <div id="Project" class="container-fluid"></div>
   <div id="Contact" class="container mb-5">
-    <div class="heading mt-5" style="
-          align-items: center;
-          text-decoration: none;
-          color: #d6002f;
-          display: flex;
-          font-size: 16px;
-          font-weight: 500;
-          gap: 10px;
-        ">
+    <div class="heading mt-5"
+      style="align-items:center; text-decoration:none; color:#d6002f; display:flex; font-size:16px; font-weight:500; gap: 10px; ">
       contact
-      <div class="line" style="border: 0.25px solid #d6002f; width: 30px"></div>
+      <div class="line" style="border: 0.25px solid #d6002f; width: 40px"></div>
     </div>
     <h1 class="c-me">Contact Me</h1>
     <div class="container mt-5">
       <div class="row d-flex flex-row text-cener flex-wrap row">
-        <div class="col-6">
+        <div class="col col-12 col-md-12 col-sm-12 col-lg-6">
           <div class="mb-5" style="font-size: 24px; font-weight: 500">
             lets get in touch
           </div>
@@ -300,22 +429,22 @@
                 href="https://www.linkedin.com/in/abdullah-memon-7a7877256/">linkedin.com/in/abdullah-memon-7a7877256/</a>
             </div>
             <div class="p-2 contact-links">
-              <img class="contact-logo" src="github2.0144fe56718f3af01a9f.png" alt=""/><a
+              <img class="contact-logo" src="github2.0144fe56718f3af01a9f.png" alt="" /><a
                 href="https://github.com/Memon-Abdullah">github.com/Memon-Abdullah/</a>
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col col-12 col-md-12 col-sm-12 col-lg-6">
           <div class="form flex-sm-column">
             <form class="d-flex flex-column flex-sm-column">
               <p class="form-uper-heading">
                 I'm available for full time and freelance work.
               </p>
-              <br/>
+              <br />
               <p class="form-heading">Drop me a message!</p>
-              <br/>
+              <br />
               <label class="label" for="name">Name</label>
-              <br/>
+              <br />
               <input class="form-input" size="59" type="text" name="name" placeholder="what sholud I call you? 😉"
                 required="" style="cursor: none" />
               <br />
@@ -323,12 +452,12 @@
               <br />
               <input class="form-input" size="59" type="email" name="email" placeholder="Get in touch 📧 Let's connect!"
                 required="" style="cursor: none" />
-              <br/>
+              <br />
               <label class="label" for="message">Message</label>
-              <br/>
+              <br />
               <textarea name="message" id="message" cols="62" rows="10"
                 placeholder="Let's get creative together.🙌"></textarea>
-              <br/>
+              <br />
               <input type="button" value="SUBMIT" style="
                     border: 3px solid white;
                     border-radius: 5px;
@@ -343,12 +472,14 @@
 
     </div>
   </div>
-  <!-- hali lae just gap -->
-  <div style="height: 170px; background-color: #111319; display: flex; align-items: center; justify-content: space-around; flex-wrap:wrap">
+  <!-- footer -->
+  <div
+    style="height: 170px; background-color: #111319; display: flex; align-items: center; justify-content: space-around; flex-wrap:wrap">
     <p>Copyright © 2023. All rights are reserved.</p>
-    <a href="#Home"class="footer-logo"><i class="fa-solid fa-sort-up" style="font-size:30px;margin-top:20px;margin-left: 20px;"></i></a>
+    <a href="#Home" class="footer-logo"><i class="fa-solid fa-sort-up"
+        style="font-size:30px;margin-top:20px;margin-left: 20px;"></i></a>
   </div>
-  
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -363,5 +494,6 @@
     });
   </script>
 </body>
+
 
 </html>
