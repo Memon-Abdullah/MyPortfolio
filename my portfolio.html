@@ -9,11 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-  <link rel="icon" href="logo-colored.jpeg" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="icon" href="lemon.png" type="image/x-icon" />
   <style>
     body {
+      /* background-color: #020202; */
       background-color: rgb(5, 5, 5);
-      font-family: 'poppins', 'sans-serif';
+      color: white;
+      font-family: "poppins", "sans-serif";
     }
 
     #myBrand {
@@ -33,7 +36,10 @@
 
     .leftSection {
       font-size: 3rem;
-      margin-top: 12rem;
+    }
+
+    .homeBody {
+      margin-top: 13rem;
       margin-left: 5rem;
     }
 
@@ -73,7 +79,7 @@
       color: white;
       border: 3px solid white;
       border-radius: 7px;
-      padding: .75rem;
+      padding: 0.75rem;
       font-size: 1.5rem;
     }
 
@@ -81,15 +87,137 @@
       text-align: center;
       margin-top: 10px;
       background-color: transparent;
-
-      /* float: left; */
+      
+    }
+    @keyframes btn-con{
+      0%{box-shadow: 0 0 5px #d6002f;}
+      50%{box-shadow: 0 0 20px #d6002f;}
+      100%{box-shadow: 0 0 5px #d6002f;}
     }
 
     #btncontactme:hover {
       color: #d6002f;
       border: 3px solid #d6002f;
-      filter: drop-shadow(5px 5px 5px red)
+      filter: drop-shadow(5px 5px 5px red);
+      animation: btn-con 1s ease-in-out infinite;
     }
+
+    .myLogo {
+      height: 20rem;
+    }
+
+    #MYLOGO {
+      margin-top: -140px;
+    }
+
+    .c-me {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: white;
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+    .contact-links a {
+      color: rgb(207, 207, 207);
+      text-decoration: none;
+    }
+
+    .contact-links a:hover {
+      color: #d6002f;
+      text-decoration: underline;
+    }
+
+    .contact-logo {
+      width: 35px;
+      height: 35px;
+      margin-right: 20px;
+    }
+
+    .form-upper-heading {
+      margin-top: 10px;
+      color: #a9afc3;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .form-heading {
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .form-input,
+    textarea {
+      background-color: #111319;
+      border: none;
+      border-bottom: 1px solid #a9afc3;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      outline: none;
+      padding: 5px;
+      margin-top: 2px;
+    }
+
+    textarea {
+      font-family: "poppins", "sans-serif";
+      height: 100px;
+      resize: none;
+    }
+
+    .form>form {
+      width: 85%;
+      border-radius: 20px;
+      padding: 20px;
+      background-color: #111319;
+      box-shadow: 0 0 5px 4px #d6002f;
+    }
+
+    .label {
+      margin-top: 1px;
+    }
+
+    .form>form input[type="button"] {
+      background: linear-gradient(270deg,
+          transparent 0,
+          transparent 50%,
+          #d6002f 0,
+          #1d1f24);
+      background-position: 100%;
+      transition: background-position 0.3s ease-in-out;
+      background-size: 200% 100%;
+    }
+
+    .form>form input[type="button"]:hover {
+      background-position: 0;
+    }
+    .footer-logo{
+      color:white;
+      font-size: 40px;
+      width: 60px;
+      background-color: red;
+      text-decoration: none;
+      border-radius: 50%;
+      
+    }
+    .footer-logo:hover{
+      background-color: #fff;
+      color: red;
+    }
+
+    /* #Contact{
+      background-color: #111319;
+      color: #fff;
+      display: flex;
+      opacity: 0;
+      -webkit-transform: translateX(-50px);
+      transform: translateX(-50px);
+      transition: opacity 1s,-webkit-transform 1s;
+      transition: opacity 1s,transform 1s;
+      transition: opacity 1s,transform 1s,-webkit-transform 1s;
+      width: 100%;
+    } */
   </style>
 </head>
 
@@ -116,25 +244,111 @@
         </div>
       </div>
     </nav>
-    <div class=" container leftSection text-white sm-12">
-      Hi, My name is <span class="text-danger" style="filter: drop-shadow(5px 5px 5px red)">Abdullah</span>
-      <div>and I am passionate</div>
+    <div class="container homeBody">
+      <div class="row">
+        <div class="col col-md-12 col-sm-12 col-lg-6 leftSection text-white">
+          Hi, My name is
+          <span class="text-danger" style="filter: drop-shadow(5px 5px 5px red)">Abdullah</span>
+          <div>and I am passionate</div>
 
-      <span id="element" class="text-danger" style="filter: drop-shadow(5px 5px 5px red)"></span>
-
-      <div class="button container-fluid">
-        <a href="#Contact">
-          <button id="btncontactme" type="button">Contact Me</button>
-        </a>
+          <span id="element" class="text-danger" style="filter: drop-shadow(5px 5px 5px red)"></span>
+          <div class="button container-fluid mt-4">
+            <a href="#Contact">
+              <button id="btncontactme" type="button">Contact Me</button>
+            </a>
+          </div>
+        </div>
+        <div class="col col-md-12 col-sm-12 col-lg-6">
+          <img src="hero-bg.svg" class="img-fluid myLogo" alt="my logo" />
+        </div>
       </div>
     </div>
-
-
   </div>
   <div id="About" class="container-fluid"></div>
   <div id="Skills" class="container-fluid"></div>
   <div id="Project" class="container-fluid"></div>
-  <div id="Contact" class="container-fluid"></div>
+  <div id="Contact" class="container mb-5">
+    <div class="heading mt-5" style="
+          align-items: center;
+          text-decoration: none;
+          color: #d6002f;
+          display: flex;
+          font-size: 16px;
+          font-weight: 500;
+          gap: 10px;
+        ">
+      contact
+      <div class="line" style="border: 0.25px solid #d6002f; width: 30px"></div>
+    </div>
+    <h1 class="c-me">Contact Me</h1>
+    <div class="container mt-5">
+      <div class="row d-flex flex-row text-cener flex-wrap row">
+        <div class="col-6">
+          <div class="mb-5" style="font-size: 24px; font-weight: 500">
+            lets get in touch
+          </div>
+          <div class="d-flex flex-column mb-3 mt-5">
+            <div class="p-2 contact-links">
+              <img class="contact-logo" src="phone.a3b2abacf1e861dcf879.png" alt="" /><a href="#">+92 315 6914702</a>
+            </div>
+            <div class="p-2 contact-links">
+              <img class="contact-logo" src="gmail.ba3d78aae0b730bb06c2.png" alt="" /><a
+                href="mailto:abdullahmemon12564@gmail.com">abdullahmemon12564@gmail.com</a>
+            </div>
+            <div class="p-2 contact-links">
+              <img class="contact-logo" src="linkedIn.712c4ce3d6be06644d11.png" alt="" /><a
+                href="https://www.linkedin.com/in/abdullah-memon-7a7877256/">linkedin.com/in/abdullah-memon-7a7877256/</a>
+            </div>
+            <div class="p-2 contact-links">
+              <img class="contact-logo" src="github2.0144fe56718f3af01a9f.png" alt=""/><a
+                href="https://github.com/Memon-Abdullah">github.com/Memon-Abdullah/</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form flex-sm-column">
+            <form class="d-flex flex-column flex-sm-column">
+              <p class="form-uper-heading">
+                I'm available for full time and freelance work.
+              </p>
+              <br/>
+              <p class="form-heading">Drop me a message!</p>
+              <br/>
+              <label class="label" for="name">Name</label>
+              <br/>
+              <input class="form-input" size="59" type="text" name="name" placeholder="what sholud I call you? 😉"
+                required="" style="cursor: none" />
+              <br />
+              <label class="label" for="email">Email</label>
+              <br />
+              <input class="form-input" size="59" type="email" name="email" placeholder="Get in touch 📧 Let's connect!"
+                required="" style="cursor: none" />
+              <br/>
+              <label class="label" for="message">Message</label>
+              <br/>
+              <textarea name="message" id="message" cols="62" rows="10"
+                placeholder="Let's get creative together.🙌"></textarea>
+              <br/>
+              <input type="button" value="SUBMIT" style="
+                    border: 3px solid white;
+                    border-radius: 5px;
+                    padding: 7px;
+                    color: white;
+                    background-color: transparent;
+                  " />
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- hali lae just gap -->
+  <div style="height: 170px; background-color: #111319; display: flex; align-items: center; justify-content: space-around; flex-wrap:wrap">
+    <p>Copyright © 2023. All rights are reserved.</p>
+    <a href="#Home"class="footer-logo"><i class="fa-solid fa-sort-up" style="font-size:30px;margin-top:20px;margin-left: 20px;"></i></a>
+  </div>
+  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -142,7 +356,7 @@
     var typed = new Typed("#element", {
       strings: [
         "Web Developer",
-        "Enthusiastic towards Blockchain",
+        "Enthusiastic towards Blockchain-chain",
         "Web Designer",
       ],
       typeSpeed: 50,
