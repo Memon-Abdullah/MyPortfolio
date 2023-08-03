@@ -190,7 +190,7 @@
       margin-top: 1px;
     }
 
-    .form>form input[type="button"] {
+    .form>form input[type="submit"] {
       background: linear-gradient(270deg,
           transparent 0,
           transparent 50%,
@@ -201,14 +201,15 @@
       background-size: 200% 100%;
     }
 
-    .form>form input[type="button"]:hover {
+    .form>form input[type="submit"]:hover {
       background-position: 0;
     }
 
     .footer-logo {
+      margin-top: 140px;
       color: white;
-      font-size: 40px;
-      width: 60px;
+      font-size: 50px;
+      width: 100px;
       background-color: red;
       text-decoration: none;
       border-radius: 50%;
@@ -295,7 +296,17 @@
             font-weight: 20px;
             border-radius: 7px;
             visibility: hidden;
-            position: absolute;z-index: 2; left:37%;top:45%;
+            position: absolute;z-index: 2; left:70%;top:75%;
+            background: linear-gradient(270deg,transparent 0,transparent 50%,#d6002f 0,#1d1f24);
+            background-position: 100%;
+            transition: background-position 0.3s ease-in-out;
+            background-size: 200% 100%;
+        }
+        .button-carousel-2{
+            font-weight: 20px;
+            border-radius: 7px;
+            visibility: hidden;
+            position: absolute;z-index: 2; left:5%;top:75%;
             background: linear-gradient(270deg,transparent 0,transparent 50%,#d6002f 0,#1d1f24);
             background-position: 100%;
             transition: background-position 0.3s ease-in-out;
@@ -304,7 +315,14 @@
         .button-carousel:hover{
             background-position :0;
         }
+        .button-carousel-2:hover{
+            background-position :0;
+        }
         .carousel-inner:hover .button-carousel{
+            z-index: 999;
+            visibility: visible;
+        }
+        .carousel-inner:hover .button-carousel-2{
             z-index: 999;
             visibility: visible;
         }
@@ -312,6 +330,17 @@
 
       #project2 {
         margin-top: 200px;
+      }
+
+      .footer-links{
+        text-decoration: none;
+        color: rgb(207, 207, 207);
+        font-size: medium;
+        font-weight: 600;
+      }
+      .footer-links:hover{
+        color: #d6002f;
+        text-decoration: underline;
       }
 
   </style>
@@ -471,7 +500,7 @@
   </div>
   <div id="Project" class="container mb-5">
     <div class="container-fluid">
-      <div class="heading mt-5"style="align-items:center; text-decoration:none; color:#d6002f; display:flex;        font-size:16pxfont-weight:500;   
+      <div class="heading mt-5"style="align-items:center; text-decoration:none; color:#d6002f; display:flex;font-size:16pxfont-weight:500;   
             gap: 10px; ">Projects
           <div class="line" style="border: 0.25px solid #d6002f; width: 40px"></div>
       </div>
@@ -484,18 +513,26 @@
           </div>
           <p style="line-height: 2rem; font-size: large; font-weight: 300;">"Festival Ismi Clone" is more than just a mere replica; it is a celebration of music, culture, and the unifying power of live events. With its seamless user experience, extensive event listings, and personalized features, this website is a testament to my skills as a web developer and an invaluable addition to your portfolio."Festival Ismi Clone" welcomes all music enthusiasts to embark on a journey of unforgettable musical experiences. So dive in and let the music take you to places you've never imagined!</p>
           <div><span style="font-size: large; font-weight: 600;">Technology:</span>
-            <img src="h.png" style="background-color:transparent;width: 30px; height: 30px;"><img src="c.png" style="color: transparent; width: 30px; height: 30px;">
-            <img src="j.png"style= "width: 30px; height: 30px;"></div>
+            <img src="h.png" style="margin-left: 5px; background-color:transparent;width: 30px; height: 30px;"><img src="c.png" style="margin-left: 5px; color: transparent; width: 30px; height: 30px;">
+            <img src="j.png"style= "margin-left: 5px; width: 30px; height: 30px;"></div>
           </div>
         <div class="col col-12 col-sm-12 col-md-12 col-lg-6">
           <div id="demo" class="carousel slide" data-bs-ride="carousel">
      
             <!-- The slideshow/carousel -->
             <div id="project1" class="carousel-inner">
-                <div class="button-carousel">
+              <div class="button-carousel-2">
+                <a href="https://github.com/Memon-Abdullah/festival.git">
+                  
+                    <input type="button" value="View Code" style="border: 4px solid white;border-radius:7px;padding: 10px;
+                    color: white;font-size:18px;
+                    background-color: transparent;"/>
+                </a>    
+            </div>  
+              <div class="button-carousel">
                     <a href="https://memon-abdullah.github.io/festival/">
                       
-                        <input type="button" value="visit Website" style="border: 4px solid white;border-radius:7px;padding: 10px;
+                        <input type="button" value="Visit Website" style="border: 4px solid white;border-radius:7px;padding: 10px;
                         color: white;font-size:18px;
                         background-color: transparent;"/>
                     </a>    
@@ -523,10 +560,18 @@
           <div id="demo" class="carousel slide" data-bs-ride="carousel">
             <!-- The slideshow/carousel -->
             <div id="project2" class="carousel-inner ">
+              <div class="button-carousel-2">
+                <a href="https://github.com/Memon-Abdullah/trainig-services.git">
+                  
+                    <input type="button" value="View Code" style="border: 4px solid white;border-radius:7px;padding: 10px;
+                    color: white;font-size:18px;
+                    background-color: transparent;"/>
+                </a>    
+            </div>
                 <div class="button-carousel">
                     <a href="https://memon-abdullah.github.io/trainig-services/">
                       
-                        <input type="button" value="visit Website" style="border: 4px solid white;border-radius:7px;padding: 10px;
+                        <input type="button" value="Visit Website" style="border: 4px solid white;border-radius:7px;padding: 10px;
                         color: white;font-size:18px;
                         background-color: transparent;"/>
                     </a>    
@@ -553,8 +598,8 @@
           Visit the live website!
         </p>
         <div><span style="font-size: large; font-weight: 600;">Technology:</span>
-          <img src="h.png" style="background-color:transparent;width: 30px; height: 30px;"><img src="c.png" style="color: transparent; width: 30px; height: 30px;">
-          <img src="j.png"style= "width: 30px; height: 30px;"></div>
+          <img src="h.png" style="margin-left: 5px; background-color:transparent;width: 30px; height: 30px;"><img src="c.png" style="margin-left: 5px; color: transparent; width: 30px; height: 30px;">
+          <img src="j.png"style= "margin-left: 5px;width: 30px; height: 30px;"></div>
         </div>
         </div>
       </div>
@@ -593,7 +638,7 @@
         </div>
         <div class="col col-12 col-md-12 col-sm-12 col-lg-6">
           <div class="form flex-sm-column">
-            <form class="d-flex flex-column flex-sm-column">
+            <form class="d-flex flex-column flex-sm-column" onsubmit="location.href='mailto:abdullahmemon12564@gmail.com';" >
               <p class="form-uper-heading">
                 I'm available for full time and freelance work.
               </p>
@@ -603,25 +648,25 @@
               <label class="label" for="name">Name</label>
               <br />
               <input class="form-input" size="59" type="text" name="name" placeholder="what sholud I call you? 😉"
-                required="" />
+                required />
               <br />
               <label class="label" for="email">Email</label>
               <br />
               <input class="form-input" size="59" type="email" name="email" placeholder="Get in touch 📧 Let's connect!"
-                required=""  />
+               required />
               <br />
               <label class="label" for="message">Message</label>
               <br />
-              <textarea name="message" id="message" cols="62" rows="10"
+              <textarea name="message" id="message" cols="62" rows="10" required 
                 placeholder="Let's get creative together.🙌"></textarea>
               <br />
-              <input type="button" value="SUBMIT" style="
-                    border: 3px solid white;
+              <input type="submit" value="SUBMIT" name="submit"
+                    style="border: 3px solid white;
                     border-radius: 5px;
                     padding: 7px;
                     color: white;
                     background-color: transparent;
-                  " />
+                "/>
             </form>
           </div>
         </div>
@@ -631,12 +676,51 @@
   </div>
 <!-- </div> -->
   <!-- footer -->
-  <div
-    style="height: 170px; background-color: #111319; display: flex; align-items: center; justify-content: space-around; flex-wrap:wrap">
-    <p>Copyright © 2023. All rights are reserved.</p>
-    <a href="#Home" class="footer-logo"><i class="fa-solid fa-sort-up"
-        style="font-size:30px;margin-top:20px;margin-left: 20px;"></i></a>
-  </div>
+  <div class="container-fluid" style="background-color: #111319;">
+    <div class="row">
+      <div class="col col-lg-5 col-md-12 col-sm-12 col-12 d-flex flex-col flex-sm-col flex-md-row flex-lg-row">
+        <div  class="mt-5 ">
+          <a  class="footer-links ms-5 " href="#Home">Home</a>
+          <a  class="footer-links ms-5 " href="#About">About</a>
+          <a  class="footer-links ms-5 " href="#Skills">Skills</a>
+          <a  class="footer-links ms-5 " href="#Project">Projects</a>
+          <a  class="footer-links ms-5 " href="#Contact">Contact</a>
+        </div>
+      </div>
+      <div class="col col-lg-5 col-md-12 col-sm-12 col-12">
+        <div class="d-flex flex-column mb-3 mt-5">
+          <div class="p-2 contact-links">
+            <img class="contact-logo" src="phone.a3b2abacf1e861dcf879.png" alt="" /><a href="#">+92 315 6914702</a>
+          </div>
+          <div class="p-2 contact-links">
+            <img class="contact-logo" src="gmail.ba3d78aae0b730bb06c2.png" alt="" /><a
+              href="mailto:abdullahmemon12564@gmail.com">abdullahmemon12564@gmail.com</a>
+          </div>
+          <div class="p-2 contact-links">
+            <img class="contact-logo" src="linkedIn.712c4ce3d6be06644d11.png" alt="" /><a
+              href="https://www.linkedin.com/in/abdullah-memon-7a7877256/">linkedin.com/in/abdullah-memon-7a7877256/</a>
+          </div>
+          <div class="p-2 contact-links">
+            <img class="contact-logo" src="github2.0144fe56718f3af01a9f.png" alt="" /><a
+              href="https://github.com/Memon-Abdullah">github.com/Memon-Abdullah/</a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-2 col-md-12 col-sm-12 col-12 align-self-end ">
+        <a href="#Home" class="footer-logo">
+          <i class="fa-solid fa-sort-up" style="font-size:30px;margin-top:20px; margin: 20px;"></i>
+        </a>
+      </div>
+    </div>
+    <div class="row mt-3 justify-content-md-center justify-content-sm-center justify-content-lg-center justify-content-center text-center">
+      <div class="col">
+        <p>Copyright © 2023. All rights are reserved.</p>
+      </div>
+    </div>
+    
+    
+    
+  </div> 
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
