@@ -19,6 +19,8 @@
       background-color: rgb(5, 5, 5);
       color: white;
       font-family: 'Poppins', 'sans-serif';
+      margin: 0;
+      padding: 0;
     }
 
     #myBrand {
@@ -355,7 +357,7 @@
     /* carousel style end */
 
     #project2 {
-      margin-top: 200px;
+      margin-top: 100px;
     }
 
     .footer-links {
@@ -479,11 +481,17 @@
       color: red;
       background-position: 0;
     }
+    @media (min-width:300px) {
+      .footer-div{
+        width: 100%;
+      }
+    }
+      
+    
   </style>
 </head>
 
 <body>
-  <div>
     <nav id="nav-dark" class="navbar fixed-top navbar-expand-lg bg-black p-4" data-bs-theme="dark">
       <div class="container-fluid">
         <div id="myBrand" class="navbar-brand">
@@ -504,7 +512,6 @@
         </div>
       </div>
     </nav>
-    <!-- <div data-bs-spy="scroll" data-bs-target="#nav-dark" data-bs-offset="0" data-bs-smooth-scroll="true"  tabindex="0"> -->
     <div id="Home" class="container homeBody">
       <div class="row">
         <div class="col col-12 col-md-12 col-sm-12 col-lg-9 leftSection text-white">
@@ -524,7 +531,6 @@
         </div>
       </div>
     </div>
-  </div>
   <div id="About" class="container mb-5">
     <div class="row">
       <!-- first column in row one of about me -->
@@ -577,13 +583,12 @@
     </div>
   </div>
 
-  </div>
   <div id="Skills" class="container">
     <div class="heading mt-5" style="align-items:center; text-decoration:none; color:#d6002f; display:flex; font-size:16px;font-weight:500; gap: 10px;">Skills & Experience
       <div class="line" style="border: 0.25px solid #d6002f; width: 40px"></div>
     </div>
     <h1 class="c-me">My Expertise</h1>
-    <div class="container">
+    <div class="container ms-5">
       <!-- card row one -->
       <div class="row mt-5 ms-5">
         <div class="col col-12 col-sm-12 col-md-6 col-lg-3 mb-5 skill-card">
@@ -637,7 +642,7 @@
       <div class="line" style="border: 0.25px solid #d6002f; width: 40px"></div>
     </div>
     <h1 class="c-me">Certificates</h1>
-    <div class="container">
+    <div class="container ms-5">
       <!-- card row one -->
       <div class="row mt-5 ms-5">
         <div id="C1" class="col col-12 col-sm-12 col-md-6 col-lg-3 mb-5 skill-card">
@@ -886,7 +891,7 @@
             </div>
           </div>
           <div class="col col-12 col-md-12 col-sm-12 col-lg-6 mt-5">
-            <div class="mb-5 mt-5">
+            <div class="mb-3">
             <span class="h1 text-danger"> Services</span>
             </div>
             <p style="line-height: 2rem; font-size: large; font-weight: 300;"> I used HTML5 and CSS3 to
@@ -906,6 +911,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
   <div id="Contact" class="container mb-5">
     <div class="heading mt-5"
@@ -978,18 +984,18 @@
   </div>
 
   <!-- footer -->
-  <div class="container" style="background-color: #111319;">
-    <div class="row">
+  <div class="container-fluid footer-div" style="background-color: #111319;">
+    <div class="row ">
       <div class="col col-lg-4 col-md-12 col-sm-12 col-12 d-flex flex-col">
 
         <div class=" mt-4 d-flex flex-column ms-5">
           <p style="font-size:28px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: 300;">
             Important Links</p>
-          <a class="footer-links ms-5 " href="#Home">Home</a>
-          <a class="footer-links ms-5 " href="#About">About</a>
-          <a class="footer-links ms-5 " href="#Skills">Skills</a>
-          <a class="footer-links ms-5 " href="#Project">Projects</a>
-          <a class="footer-links ms-5 " href="#Contact">Contact</a>
+          <a class="footer-links ms-5" href="#Home">Home</a>
+          <a class="footer-links ms-5" href="#About">About</a>
+          <a class="footer-links ms-5" href="#Skills">Skills</a>
+          <a class="footer-links ms-5" href="#Project">Projects</a>
+          <a class="footer-links ms-5" href="#Contact">Contact</a>
         </div>
       </div>
       <div class="col col-lg-5 col-md-12 col-sm-12 col-12">
@@ -1011,7 +1017,7 @@
           </div>
         </div>
       </div>
-      <div class="col col-lg-2 col-md-12 col-sm-12 col-12 align-self-end ">
+      <div class="col col-lg-3 col-md-12 col-sm-12 col-12 align-self-end ">
         <a href="#Home" class="footer-logo">
           <i class="fa-solid fa-sort-up" style="font-size:30px;margin-top:20px; margin: 20px;"></i>
         </a>
